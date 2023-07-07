@@ -9,7 +9,7 @@ export default defineConfig({
     vue(),
   ],
   build: {
-    outDir: '../_static/front',
+    // outDir: '../_static/front',
     rollupOptions: {
      
       output: {
