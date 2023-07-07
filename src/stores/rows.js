@@ -15,7 +15,7 @@ export const useCounterStore = defineStore('counter', () => {
 export const useRowsStore = defineStore({
   id: 'rows',
   state: () => ({
-    rows: [],
+    rows: [{ input1: '', input2: '' }],
   }),
   actions: {
     addRow(row) {

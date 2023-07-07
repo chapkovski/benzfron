@@ -8,6 +8,17 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  build: {
+    outDir: '../_static/front',
+    rollupOptions: {
+     
+      output: {
+        entryFileNames: `[name].js`,
+        chunkFileNames: `[name].js`,
+        assetFileNames: `[name].[ext]`
+      }
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
